@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+  <title>MINJI NOTE</title>
+  <script src="https://kit.fontawesome.com/8c880d619e.js" crossorigin="anonymous"></script>
+  <script src="main2.js" defer></script>
+
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+  <div class="navbar__logo">
+      <i class="fas fa-book"></i>
+      <a href="file:///Users/jji/Desktop/project/index.html">MINJI NOTE</a>
+  </div>
+    <ul class="navbar__menu">
+      <li><a href="file:///Users/jji/Desktop/project/todo.html">To Do List</a></li>
+      <li><a href="">Event</a></li>
+      <li><a href="">Notice</a></li>
+      <li><a href="file:///Users/jji/Desktop/project/texttospeech.html">Text-to-Speech</a></li>
+      <li><a href="https://www.youtube.com/">ONLINE-CLASS</a></li>
+    </ul>
+
+    <ul class="navbar__links">
+       <li><a href="mailto:minjji627@gmail.com">
+         <i class="fas fa-envelope-square"></i></a></li>
+    </ul>
+    <a href="#" class="navbar__toggleBtn">
+    <i class="fas fa-bars"></i>
+    </a>
+  </nav>
+</header>
+
+<!--todo-->
+
+<details open>
+            <summary>
+                <div class = "top">
+                    <h1>To Do List</h1>
+                    <input type="text" id="input" placeholder="What to do?" onKeypress="javascript:if(event.keyCode==13) click_event();">
+                    <button type="button" class="fas fa-plus" onclick="click_event();"></button>
+                </div>
+            </summary>
+            <div id="list"></div>
+        </details>
+
+
+</body>
+<script type="text/javascript" src="To_do_list.js"></script>
+  <script src="https://kit.fontawesome.com/f1fb370a81.js" crossorigin="anonymous"></script>
+</html>
